@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NLog;
-using NLog.Targets;
 using System.ComponentModel.DataAnnotations;
 using HipChat;
 using System.ComponentModel;
@@ -14,10 +8,6 @@ namespace NLog.Targets.HipChat
     [Target("HipChat")]
     public sealed class HipChatTarget : TargetWithLayout
     {
-        public HipChatTarget()
-        {
-        }
-
         [Required]
         public string AuthToken { get; set; }
 
