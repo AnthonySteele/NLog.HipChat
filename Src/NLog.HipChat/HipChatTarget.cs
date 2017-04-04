@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using HipChat;
-using System.ComponentModel;
+using NLog;
+using NLog.Targets;
 
-namespace NLog.Targets.HipChat
+namespace JustEat.NLog.HipChat
 {
     [Target("HipChat")]
     public sealed class HipChatTarget : TargetWithLayout

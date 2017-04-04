@@ -7,8 +7,8 @@
     <ProjectGuid>{86E93674-84B5-4EC2-9683-A91A4A689896}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NLog.HipChat</RootNamespace>
-    <AssemblyName>NLog.HipChat</AssemblyName>
+    <RootNamespace>JustEat.NLog.HipChat</RootNamespace>
+    <AssemblyName>JustEat.NLog.HipChat</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

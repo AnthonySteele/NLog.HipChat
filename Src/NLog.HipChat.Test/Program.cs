@@ -1,7 +1,7 @@
-﻿using NLog;
-using System;
+﻿using System;
+using NLog;
 
-namespace NLg.HipChat.Test
+namespace JustEat.NLog.HipChat.Test
 {
     public class Program
     {
