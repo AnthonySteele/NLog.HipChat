@@ -23,7 +23,8 @@ So that you can recieve message when your application occurs error immediately.
 						roomId="{roomid}" 
 						senderName="{sender}" 
 						backgroundColor="red"
-						layout="${message}"/>
+						layout="${message}"
+						messageFormat="html" />
   			</targets>
   			<rules>   
 				<logger name="*" minlevel="Error" writeTo="hipChat" />
