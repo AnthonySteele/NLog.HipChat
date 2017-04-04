@@ -30,7 +30,18 @@ So that you can recieve message when your application occurs error immediately.
 				<logger name="*" minlevel="Error" writeTo="hipChat" />
   			</rules>
 		</nlog>
+		
+## Target properties
+		
+Required properties: 
+ * `AuthToken` 
+ * `RoomId`
 
+Optional properties: 
+ * `SenderName` - default is "Nlog.HipChatTarget"
+ * `BackgroundColor` - default is "yellow"
+ * `MessageFormat` - default is "html", valid values are "html" and "text"
+		
 ## Project Reference Home
 
 * Nuget - https://www.nuget.org/packages/NLog.HipChat/
