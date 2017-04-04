@@ -26,9 +26,9 @@ namespace NLog.Targets.HipChat
 
         protected override void Write(LogEventInfo logEvent)
         {
-            string log = this.Layout.Render(logEvent);
+            string log = Layout.Render(logEvent);
 
-            this.SendMessageToHipchat(log);
+            SendMessageToHipchat(log);
         }
 
         private HipChatClient.MessageFormat ParseFormat()
@@ -41,12 +41,10 @@ namespace NLog.Targets.HipChat
 
         private void SendMessageToHipchat(string message)
         {
-            var format = ParseFormat();
-
-            var client = new HipChatClient(this.AuthToken, this.RoomId, format);
+            var client = new HipChatClient(AuthToken, RoomId, ParseFormat());
             client.From = SenderName;
 
-            client.SendMessage(message, this.BackgroundColor);
+            client.SendMessage(message, BackgroundColor);
         }
     }
 }
